@@ -1,0 +1,19 @@
+{
+  "name": "react-flux-npm-automation",
+  "version": "0.9.0",
+  "description": "Sample React/Flux seed for a large app, using npm to process development automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "npm-scripts",
+    "flux",
+    "react",
+    "relay",
+    "react-native",
+    "cordova"
+  ],
+  "author": "Brian Vanderbusch <brian@normalgravity.com> (https://github.com/LongLiveCHIEF)",
+  "license": "MIT"
+}
