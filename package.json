@@ -6,7 +6,11 @@
   "scripts": {
     "test": "npm test",
     "serve:dev": "http-server -p 8000 ./",
-    "open:dev":"opener http://localhost:8000"
+    "open:dev": "opener http://localhost:8000",
+	"build:dev":"browserify index.js > bundle.js"
+  },
+  "browserify":{
+  	"transform": ["babelify"]
   },
   "keywords": [
     "npm-scripts",
@@ -30,6 +34,8 @@
     "react": "^0.13.2"
   },
   "devDependencies": {
+    "babelify": "^6.0.2",
+    "browserify": "^10.1.2",
     "http-server": "^0.8.0",
     "opener": "^1.4.1"
   }
