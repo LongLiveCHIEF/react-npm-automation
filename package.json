@@ -43,6 +43,8 @@
     "browserify": "^10.1.2",
     "eslint": "^0.20.0",
     "http-server": "^0.8.0",
-    "opener": "^1.4.1"
+    "jest-cli": "^0.4.1",
+    "opener": "^1.4.1",
+    "watchify": "^3.2.1"
   }
 }
