@@ -1,7 +1,9 @@
-var React = require("react");
+var React = require("react/addons");
+var Hello = require("./hello.jsx");
+
 
 React.render(
-	<h1>Hello, world!</h1>,
+<Hello />,
 	document.getElementById("example")
 );
 // end of file, testing watchify
