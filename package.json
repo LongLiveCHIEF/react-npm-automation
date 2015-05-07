@@ -7,8 +7,8 @@
     "test": "npm test",
     "serve:dev": "http-server -p 8000 ./src/",
     "open:dev": "opener http://localhost:8000",
-    "build:dev": "browserify src/index.js > src/bundle.js",
-    "clean": "rm src/bundle.js",
+    "build:dev": "browserify ./src/index.jsx > ./src/bundle.js",
+    "clean": "rm ./src/bundle.js",
     "lint": "eslint ./src --ext .js,.jsx"
   },
   "browserify": {
