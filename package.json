@@ -7,7 +7,8 @@
     "test": "npm test",
     "serve:dev": "http-server -p 8000 ./",
     "open:dev": "opener http://localhost:8000",
-	"build:dev":"browserify index.js > bundle.js"
+	"build:dev":"browserify index.js > bundle.js",
+	"clean":"rm bundle.js"
   },
   "browserify":{
   	"transform": ["babelify"]
