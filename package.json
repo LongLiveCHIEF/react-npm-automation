@@ -15,5 +15,16 @@
     "cordova"
   ],
   "author": "Brian Vanderbusch <brian@normalgravity.com> (https://github.com/LongLiveCHIEF)",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LongLiveCHIEF/react-flux-npm-automation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LongLiveCHIEF/react-flux-npm-automation/issues"
+  },
+  "homepage": "https://github.com/LongLiveCHIEF/react-flux-npm-automation#readme",
+  "dependencies": {
+    "react": "^0.13.2"
+  }
 }
