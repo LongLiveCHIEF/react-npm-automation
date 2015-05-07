@@ -4,7 +4,9 @@
   "description": "Sample React/Flux seed for a large app, using npm to process development automation",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "serve:dev": "http-server -p 8000 ./",
+    "open:dev":"opener http://localhost:8000"
   },
   "keywords": [
     "npm-scripts",
