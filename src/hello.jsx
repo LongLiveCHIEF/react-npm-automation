@@ -4,6 +4,11 @@ var React = require('react/addons');
 // simple component to ensure setup is working
 
 var Hello = React.createClass({
+	getDefaultProps: function(){
+		return {
+			packageName:'React &amp; Flux NPM Automation'
+		}
+	},
 	getInitialState: function(){
 		return {
 			packageName: 'React &amp; Flux NPM Automation'
