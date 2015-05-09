@@ -1,3 +1,4 @@
 --recursive
---debug
+--reporter spec
+--ui bdd
 --compilers jsx:./test/jsx-compiler.js
