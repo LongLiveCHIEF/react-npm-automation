@@ -1,9 +1,8 @@
-/** @jsx React.DOM */
 var jsdom = require('mocha-jsdom');
 var expect = require('chai').expect;
 var React = require('react/addons');
 var TestUtils = React.addons.TestUtils;
-var Hello = require('../src/hello.jsx');
+var Hello = require('../src/hello');
 
 describe('Setup test', function (){
 
@@ -19,7 +18,7 @@ describe('Setup test', function (){
 				
 		var helloDiv = TestUtils.findRenderedDOMComponentWithTag(helloComponent, 'div');
 
-		this.helloElement = helloDiv.getDOMNode();
+		this.helloElement = helloDiv.getDOMNode().textContent;
 	});
 
 	
@@ -30,7 +29,7 @@ describe('Setup test', function (){
 	});
 
 	it('should render a success message',function(){
-		expect(this.helloElement).to.contain('has been set up');
+		expect(this.helloElement).to.be.a('string');
 	});
 
 	it('should show package name in message',function(){
