@@ -4,7 +4,6 @@
   "description": "Sample React/Flux seed for a large app, using npm to process development automation",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
     "serve:dev": "http-server -p 8000 ./src/",
     "open:dev": "opener http://localhost:8000",
     "build:dev": "browserify ./src/index.jsx > ./src/bundle.js",
