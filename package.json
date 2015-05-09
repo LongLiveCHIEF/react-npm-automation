@@ -17,9 +17,11 @@
       "babelify"
     ]
   },
-  "jest":{
-  	"scriptPreprocessor":"<rootDir>/preprocessor.js",
-  	"unmockedModulePathPatterns": ["<rootDir>/node_modules/react"]
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/preprocessor.js",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ]
   },
   "keywords": [
     "npm-scripts",
@@ -48,7 +50,6 @@
     "browserify": "^10.1.2",
     "eslint": "^0.20.0",
     "http-server": "^0.8.0",
-    "jest-cli": "^0.4.1",
     "opener": "^1.4.1",
     "react-tools": "^0.13.2",
     "watchify": "^3.2.1"
