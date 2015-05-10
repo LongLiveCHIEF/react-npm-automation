@@ -55,5 +55,8 @@
     "opener": "^1.4.1",
     "react-tools": "^0.13.2",
     "watchify": "^3.2.1"
+  },
+  "engines":{
+  	  "iojs":"~2.0.1"
   }
 }
