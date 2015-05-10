@@ -4,13 +4,16 @@
   "description": "Sample React/Flux seed for a large app, using npm to process development automation",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ",
+	"pretest": "npm run lint",
+    "test": "mocha",
     "serve:dev": "http-server -p 8000 ./src/",
     "open:dev": "opener http://localhost:8000",
     "build:dev": "browserify ./src/index.jsx > ./src/bundle.js",
     "clean": "rm ./src/bundle.js",
     "lint": "eslint ./src --ext .js,.jsx",
-    "watch:js": "watchify ./src/index.jsx -o ./src/bundle.js"
+    "watch:js": "watchify ./src/index.jsx -o ./src/bundle.js",
+	"prewatch":"npm run watchify",
+	"watch":"watch 'npm run test' ./src/ ./test/"
   },
   "browserify": {
     "transform": [
