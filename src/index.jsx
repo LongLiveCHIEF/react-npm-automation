@@ -1,6 +1,10 @@
-var React = require("react");
+var React = require("react/addons");
+var Hello = require("./hello.jsx");
+var pkg = require("../package.json");
+
+
 
 React.render(
-	<h1>Hello, world!</h1>,
+<Hello packageName={pkg.name} />,
 	document.getElementById("example")
 );
