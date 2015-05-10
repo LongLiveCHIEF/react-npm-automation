@@ -12,8 +12,9 @@
     "clean": "rm ./src/bundle.js",
     "lint": "eslint ./src --ext .js,.jsx",
     "watch:js": "watchify ./src/index.jsx -o ./src/bundle.js",
-	"prewatch":"npm run watchify",
-	"watch":"watch 'npm run test' ./src/ ./test/"
+	"watch":"watch 'npm run test' ./src/ ./test/",
+	"prestart":"npm run clean && npm run build:dev",
+	"start":"npm run watch & npm run watch:js & npm run serve:dev & npm run open:dev"
   },
   "browserify": {
     "transform": [
