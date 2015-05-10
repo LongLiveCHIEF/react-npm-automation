@@ -14,7 +14,7 @@
     "watch:js": "watchify ./src/index.jsx -o ./src/bundle.js",
 	"watch":"watch 'npm run test' ./src/ ./test/",
 	"prestart":"npm run clean && npm run build:dev",
-	"start":"npm run watch & npm run watch:js & npm run serve:dev & npm run open:dev"
+	"start":"npm run watch:js & npm run watch & npm run serve:dev & npm run open:dev"
   },
   "browserify": {
     "transform": [
