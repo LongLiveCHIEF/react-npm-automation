@@ -9,9 +9,7 @@
     "build:dev": "browserify ./src/index.jsx > ./src/bundle.js",
     "clean": "rm ./src/bundle.js",
     "lint": "eslint ./src --ext .js,.jsx",
-    "watch:js": "watchify ./src/index.jsx -o ./src/bundle.js",
-    "prestart": "npm run clean && npm run build:dev",
-    "start": "npm run watch:js & npm run watch & npm run serve:dev & npm run open:dev"
+    "prestart": "npm run clean && npm run build:dev"
   },
   "browserify": {
     "transform": [
