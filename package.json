@@ -6,8 +6,11 @@
   "scripts": {
     "pretest": "npm run lint",
     "test": "mocha ./test/**/*-spec.*",
-    "build:dev": "browserify ./src/index.jsx > ./src/bundle.js",
-    "clean": "rm ./src/bundle.js",
+	"prebuild":"npm run clean",
+	"build":"npm run build:js & npm run build:html",
+    "build:js": "browserify ./src/client/index.jsx > ./build/bundle.js",
+	"build:html":"cp ./src/client/index.html ./build/index.html",
+    "clean": "rm -rf ./build/*",
     "lint": "eslint ./src --ext .js,.jsx",
     "prestart": "npm run clean && npm run build:dev"
   },
@@ -36,7 +39,7 @@
   "homepage": "https://github.com/LongLiveCHIEF/react-flux-npm-automation#readme",
   "dependencies": {
     "react": "^0.13.2",
-	"babelify": "^6.0.2"
+    "babelify": "^6.0.2"
   },
   "devDependencies": {
     "babel-eslint": "^3.1.1",
@@ -46,6 +49,7 @@
     "chai-jq": "0.0.8",
     "domino": "^1.0.18",
     "eslint": "^0.20.0",
+    "express": "^4.12.3",
     "mocha": "2.0.1",
     "opener": "^1.4.1",
     "react-tools": "^0.13.2",
