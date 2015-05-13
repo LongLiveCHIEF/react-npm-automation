@@ -4,7 +4,7 @@
   "description": "Sample React/Flux seed for a large app, using npm to process development automation",
   "main": "index.js",
   "scripts": {
-	"pretest": "npm run lint",
+    "pretest": "npm run lint",
     "test": "mocha",
     "serve:dev": "http-server -p 8000 ./src/",
     "open:dev": "opener http://localhost:8000",
@@ -12,9 +12,9 @@
     "clean": "rm ./src/bundle.js",
     "lint": "eslint ./src --ext .js,.jsx",
     "watch:js": "watchify ./src/index.jsx -o ./src/bundle.js",
-	"watch":"watch 'npm run test' ./src/ ./test/",
-	"prestart":"npm run clean && npm run build:dev",
-	"start":"npm run watch:js & npm run watch & npm run serve:dev & npm run open:dev"
+    "watch": "watch 'npm run test' ./src/ ./test/",
+    "prestart": "npm run clean && npm run build:dev",
+    "start": "npm run watch:js & npm run watch & npm run serve:dev & npm run open:dev"
   },
   "browserify": {
     "transform": [
@@ -48,16 +48,18 @@
     "babelify": "^6.0.2",
     "browserify": "^10.1.2",
     "chai": "^2.3.0",
+    "chai-as-promised": "^5.0.0",
+    "chai-jq": "0.0.8",
+    "domino": "^1.0.18",
     "eslint": "^0.20.0",
-    "http-server": "^0.8.0",
-    "jsdom": "^5.3.0",
     "mocha": "2.0.1",
-    "mocha-jsdom": "^0.3.0",
     "opener": "^1.4.1",
     "react-tools": "^0.13.2",
-    "watchify": "^3.2.1"
+    "sinon": "^1.14.1",
+    "sinon-chai": "^2.7.0",
+    "zepto-node": "^1.0.0"
   },
-  "engines":{
-  	  "iojs":"~2.0.1"
+  "engines": {
+    "iojs": "~2.0.1"
   }
 }
