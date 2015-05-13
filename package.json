@@ -5,14 +5,11 @@
   "main": "index.js",
   "scripts": {
     "pretest": "npm run lint",
-    "test": "mocha",
-    "serve:dev": "http-server -p 8000 ./src/",
-    "open:dev": "opener http://localhost:8000",
+    "test": "mocha ./test/**/*-spec.*",
     "build:dev": "browserify ./src/index.jsx > ./src/bundle.js",
     "clean": "rm ./src/bundle.js",
     "lint": "eslint ./src --ext .js,.jsx",
     "watch:js": "watchify ./src/index.jsx -o ./src/bundle.js",
-    "watch": "watch 'npm run test' ./src/ ./test/",
     "prestart": "npm run clean && npm run build:dev",
     "start": "npm run watch:js & npm run watch & npm run serve:dev & npm run open:dev"
   },
@@ -41,11 +38,10 @@
   "homepage": "https://github.com/LongLiveCHIEF/react-flux-npm-automation#readme",
   "dependencies": {
     "react": "^0.13.2",
-    "watch": "^0.16.0"
+	"babelify": "^6.0.2"
   },
   "devDependencies": {
     "babel-eslint": "^3.1.1",
-    "babelify": "^6.0.2",
     "browserify": "^10.1.2",
     "chai": "^2.3.0",
     "chai-as-promised": "^5.0.0",
@@ -60,6 +56,6 @@
     "zepto-node": "^1.0.0"
   },
   "engines": {
-    "iojs": "~2.0.1"
+    "node": "~0.12.0"
   }
 }
