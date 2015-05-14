@@ -12,7 +12,8 @@
     "build:html": "cp ./src/client/index.html ./build/index.html",
     "clean": "rm -rf ./build/*",
     "lint": "eslint ./src --ext .js,.jsx",
-    "prestart": "npm run clean && npm run build:dev"
+    "prestart": "npm run clean && npm run build",
+	"start":"nodemon server.js"
   },
   "browserify": {
     "transform": [
