@@ -12,8 +12,8 @@
     "build:html": "cp ./src/client/index.html ./build/index.html",
     "clean": "rm -rf ./build/*",
     "lint": "eslint ./src --ext .js,.jsx",
-	"watch:js":"watchify ./src/client/index.jsx -o ./build/bundle.js", 
-	"watch":"npm run watch:js",
+    "watch:js": "watchify ./src/client/index.jsx -o ./build/bundle.js",
+    "watch": "npm run watch:js",
     "prestart": "npm run build",
     "start": "npm run watch & nodemon server.js -w ./src/server"
   },
@@ -51,7 +51,6 @@
     "chai": "^2.3.0",
     "chai-as-promised": "^5.0.0",
     "chai-jq": "0.0.8",
-    "connect-livereload": "^0.5.3",
     "domino": "^1.0.18",
     "errorhandler": "^1.3.5",
     "eslint": "^0.20.0",

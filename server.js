@@ -16,7 +16,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: true
 }));
-app.use(require("connect-livereload")());
 app.use(express.static(publicDir));
 app.use(errorHandler({
   dumpExceptions: true,
