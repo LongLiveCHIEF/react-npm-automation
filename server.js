@@ -1,5 +1,5 @@
-var express = require("express"),
-    app = express(),
+var express = require("express");
+var app = express(),
     bodyParser = require('body-parser'),
     errorHandler = require('errorhandler'),
     methodOverride = require('method-override'),
@@ -21,7 +21,6 @@ app.use(errorHandler({
   dumpExceptions: true,
   showStack: true
 }));
-
-console.log("Simple static server showing %s listening at http://%s:%s", publicDir, hostname, port);
+console.log("You are now serving static files from %s listening at http://%s:%s", publicDir, hostname, port);
 app.listen(port, hostname);
 
