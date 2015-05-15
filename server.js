@@ -7,6 +7,8 @@ var express = require("express"),
     port = parseInt(process.env.PORT, 10) || 7654,
     publicDir = process.argv[2] || __dirname + '/build';
 
+app.use(require("connect-livereload")());
+
 app.get("/", function (req, res) {
   res.redirect("/index.html");
 });
@@ -21,7 +23,6 @@ app.use(errorHandler({
   dumpExceptions: true,
   showStack: true
 }));
-
 console.log("Simple static server showing %s listening at http://%s:%s", publicDir, hostname, port);
 app.listen(port, hostname);
 
