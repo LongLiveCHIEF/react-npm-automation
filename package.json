@@ -12,8 +12,10 @@
     "build:html": "cp ./src/client/index.html ./build/index.html",
     "clean": "rm -rf ./build/*",
     "lint": "eslint ./src --ext .js,.jsx",
-    "prestart": "npm run clean && npm run build",
-    "start": "node server.js"
+	"watch:js":"watchify ./src/client/index.jsx -o ./build/bundle.js", 
+	"watch":"npm run watch:js",
+    "prestart": "npm run build",
+    "start": "npm run watch & nodemon server.js -w ./src/server"
   },
   "browserify": {
     "transform": [
