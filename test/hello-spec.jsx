@@ -17,7 +17,8 @@ describe('Setup test', function (){
 	});	
 	
 	it('domino is working', function() {
-		expect(true).to.be.ok;
+		expect(document.body).to.be.ok;
+		expect(document.nobody).to.not.be.ok;
 	});
 
 	it('should render a success message', function(){
