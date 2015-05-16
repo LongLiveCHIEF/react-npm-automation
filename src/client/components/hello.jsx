@@ -1,7 +1,8 @@
 var React = require("react/addons");
+var mui = require("material-ui");
+var Toolbar = mui.Toolbar;
 
-
-// a simple component to ensure setup is working
+// a simple mui layout to ensure setup is working
 
 var Hello = React.createClass({
 	getDefaultProps: function(){
@@ -16,7 +17,9 @@ var Hello = React.createClass({
 	},
 	render: function() {
 		return (
-			<div>{this.props.packageName},  has been set up and is running!</div>
+			<Toolbar>
+				{this.props.packageName}
+			</Toolbar>
 		);
 	}
 });
