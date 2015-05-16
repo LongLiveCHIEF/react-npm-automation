@@ -1,6 +1,6 @@
 {
   "name": "react-flux-npm-automation",
-  "version": "0.6.1",
+  "version": "0.6.22",
   "description": "Sample React/Flux seed for a large app, using npm to process development automation",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "build": "npm run build:js & npm run build:html",
     "build:js": "browserify ./src/client/index.jsx > ./build/bundle.js",
     "build:html": "cp ./src/client/index.html ./build/index.html",
-	"open:dev":"sleep 6 && opener http://localhost:7654/index.html",
+	"open:dev":"sleep  && opener http://localhost:7654/index.html",
     "clean": "rm -rf ./build/*",
     "livereload": "livereload ./build",
     "lint": "eslint ./src --ext .js,.jsx",
