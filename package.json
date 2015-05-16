@@ -11,7 +11,7 @@
     "build:js": "browserify ./src/client/index.jsx > ./build/bundle.js",
     "build:html": "cp ./src/client/index.html ./build/index.html",
 	"build:css":"lessc ./src/client/styles.less > ./build/styles.css",
-    "open:dev": "sleep  && opener http://localhost:7654/index.html",
+    "open:dev": "sleep 8 && opener http://localhost:7654/index.html",
     "clean": "rm -rf ./build/*",
     "livereload": "livereload ./build",
     "lint": "eslint ./src --ext .js,.jsx",
