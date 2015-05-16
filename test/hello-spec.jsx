@@ -1,5 +1,4 @@
-var Hello = require('../src/client/hello.jsx');
-
+var Hello = require('../src/client/components/hello.jsx');
 
 describe('Setup test', function (){
 
@@ -21,9 +20,6 @@ describe('Setup test', function (){
 		expect(document.nobody).to.not.be.ok;
 	});
 
-	it('should render a success message', function(){
-		expect(message).to.contain('has been set up');
-	});
 
 	it('should include the package name', function(){
 		expect(message).to.contain(packageName);
