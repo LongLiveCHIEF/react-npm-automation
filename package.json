@@ -1,6 +1,6 @@
 {
   "name": "react-flux-npm-automation",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Sample React/Flux seed for a large app, using npm to process development automation",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "build:js": "browserify ./src/client/index.jsx > ./build/bundle.js",
     "build:html": "cp ./src/client/index.html ./build/index.html",
     "clean": "rm -rf ./build/*",
-	"livereload":"livereload ./build",
+    "livereload": "livereload ./build",
     "lint": "eslint ./src --ext .js,.jsx",
     "watch:js": "watchify ./src/client/index.jsx -o ./build/bundle.js",
     "watch": "npm run watch:js",
@@ -61,6 +61,7 @@
     "livereload": "^0.3.7",
     "method-override": "^2.3.3",
     "mocha": "2.0.1",
+    "nodemon": "^1.3.7",
     "opener": "^1.4.1",
     "react-tools": "^0.13.2",
     "sinon": "^1.14.1",
