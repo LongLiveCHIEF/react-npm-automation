@@ -18,6 +18,7 @@
     "watch:js": "watchify ./src/client/index.jsx -o ./build/bundle.js",
     "js:changed": "onchange './src' './test' -- npm test",
 	"css:changed":"onchange './src/client/**/*.less' -- npm run build:css",
+	"html:changed":"onchange `./src/client/**/*.less' -- npm run build:html",
     "watch": "npm run watch:js & npm run js:changed & npm run css:changed",
     "prestart": "npm run build",
     "start": "npm run livereload & nodemon server.js -w ./src/server",
