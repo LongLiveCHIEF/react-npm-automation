@@ -48,6 +48,16 @@ back, (or if you receive a `EADDRINUSE` error when running the start command,) r
 This will search for any silent processes like `livereload` or `watch` and end them, so they can be started
 back up on the configured ports. 
 
+### Testing & Linting
+
+Testing and Linting will automatically run on each save, of a `./src` or `./test` file if you have run any version
+of the start or watch commands. However, if you want to run testing manually, simply type into the command line:
+
+    npm test
+
+This will first lint, and then execute tests. If you wish only to lint, enter:
+
+    npm run lint
 
 *** 
 
