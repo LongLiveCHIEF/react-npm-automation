@@ -1,6 +1,6 @@
 {
   "name": "react-flux-npm-automation",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "description": "Sample React/Flux seed for a large app, using npm to process development automation",
   "main": "index.js",
   "scripts": {
