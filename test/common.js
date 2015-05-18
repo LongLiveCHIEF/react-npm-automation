@@ -9,7 +9,6 @@ global.React = require("react/addons");
 global.React.test = global.React.addons.TestUtils;
 
 require("./dom-helper");
-require("./jsx-compiler");
 
 var chaiJq = require("chai-jq");
 chai.use(chaiJq);
