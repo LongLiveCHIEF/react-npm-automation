@@ -7,5 +7,5 @@ require('livereload-js');
 
 React.render(
 <Hello packageName={pkg.name} />,
-	document.getElementById("example")
+	document.body
 );
