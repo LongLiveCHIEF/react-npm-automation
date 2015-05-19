@@ -1,6 +1,8 @@
 var React = require("react");
 var Reflux = require("reflux");
 var pkg = require("./stores/packageStore.jsx");
+var mui = require("material-ui");
+var {AppCanvas, AppBar} = mui;
 
 
 var App = React.createClass({
@@ -8,7 +10,9 @@ var App = React.createClass({
 
 	render: function (){
 		return (
-			<div>{this.state.pkg.name}</div>
+			<AppCanvas predefinedLayout={1}>
+				<AppBar title={this.state.pkg.name} />
+			</AppCanvas>
 		);
 	}
 	
