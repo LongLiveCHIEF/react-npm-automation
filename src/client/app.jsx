@@ -1,6 +1,6 @@
 var React = require("react");
 var Reflux = require("reflux");
-var pkg = require("../../package.json");
+var packageStore = require("./stores/packageStore");
 
 var packageStore = Reflux.createStore({
 	data: {pkg},
