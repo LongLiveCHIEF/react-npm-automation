@@ -12,7 +12,8 @@
 		"quotes":0,
 		"comma-spacing":0,
 		"no-unused-vars":0,
-		"no-ternary":1
+		"no-ternary":1,
+		"no-trailing-spaces":0
 	},
 	"ecmaFeaturesj": {
 		"jsx":true,
