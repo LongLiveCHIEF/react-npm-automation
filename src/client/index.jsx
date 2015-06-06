@@ -1,11 +1,14 @@
 var React = require("react/addons");
 var Hello = require("./components/hello.jsx");
-var pkg = require("../../package.json");
+var Reflux = require("reflux");
+var App = require("./app.jsx");
+var injectTapEventPlugin = require("react-tap-event-plugin");
+injectTapEventPlugin();
 
 window.LiveReloadOptions = { host: "localhost" };
 require('livereload-js');
 
 React.render(
-<Hello packageName={pkg.name} />,
-	document.getElementById("example")
+<App />,
+	document.body
 );

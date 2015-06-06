@@ -10,7 +10,7 @@
     "build": "npm run build:js & npm run build:html & npm run build:css",
     "build:js": "browserify ./src/client/index.jsx > ./build/bundle.js",
     "build:html": "cp ./src/client/index.html ./build/index.html",
-	"build:css":"lessc ./src/client/styles.less > ./build/styles.css",
+    "build:css": "lessc ./src/client/styles.less > ./build/styles.css",
     "open:dev": "sleep 8 && opener http://localhost:7654/index.html",
     "clean": "rm -rf ./build/*",
     "livereload": "livereload ./build",
@@ -51,9 +51,11 @@
   "dependencies": {
     "babelify": "^6.0.2",
     "livereload-js": "^2.2.2",
-    "react": "^0.13.2",
     "material-ui": "^0.7.5",
-    "react-tap-event-plugin": "^0.1.6"
+    "react": "^0.13.2",
+    "react-router": "^0.13.3",
+    "react-tap-event-plugin": "^0.1.6",
+	"reflux":"^0.2.7"
   },
   "devDependencies": {
     "babel-eslint": "^3.1.1",
