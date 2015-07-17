@@ -1,4 +1,4 @@
-var Hello = require('../src/client/components/hello.jsx');
+var Hello = require('../../src/client/components/hello.jsx');
 
 describe('Setup test', function (){
 
